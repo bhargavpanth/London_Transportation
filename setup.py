@@ -5,7 +5,7 @@ def read(file_name: str):
     return open(os.path.join(os.path.dirname(__file__), file_name)).read()
 
 setup(
-    name = "transportation_pipeline",
+    name = "transportation_analytics_pipeline",
     version = "0.0.1",
     author = "Bhargav Panth",
     author_email = "bhargavrpanth@gmail.com",
