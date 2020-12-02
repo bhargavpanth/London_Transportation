@@ -7,3 +7,5 @@ config['settings'] = {
 }
 
 # Add config settings for Cassandra
+
+# Add config settings for Kafka
