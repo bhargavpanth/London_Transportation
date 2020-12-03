@@ -24,3 +24,13 @@ services:
       KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
     depends_on:
       - zookeeper
+  cassandra:
+    image: bitnami/cassandra:latest
+    hostname: cassandra
+    container_name: cassandra
+    ports:
+      - ""
+    environment:
+      CASSANDRA_CQL_PORT_NUMBER: 9042
+      CASSANDRA_TRANSPORT_PORT_NUMBER: 7000
+      CASSANDRA_JMX_PORT_NUMBER: 7199
