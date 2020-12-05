@@ -2,6 +2,9 @@ import argparse
 from crontab import CronTab
 from src.bikes import Bike
 
+def insert_into_kafka():
+    pass
+
 def main(mode: str, cron: str):
     pass
 
