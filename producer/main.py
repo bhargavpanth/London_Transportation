@@ -2,7 +2,7 @@ import argparse
 from crontab import CronTab
 from src.bikes import Bike
 
-def insert_into_kafka():
+def insert_into_kafka(topic: str) -> bool:
     pass
 
 def main(mode: str, cron: str):
