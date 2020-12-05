@@ -8,5 +8,5 @@ class Bike:
 
     def get_data_by_bike_point_id(self, id: str):
         # GET req on f'{self.endpoint}/{id}'
-        # where id is f'Bikepoints_{num}' and 1 <= num <= 820
+        # where id is f'Bikepoints_{num}' and 1 <= num <= 821
         pass
