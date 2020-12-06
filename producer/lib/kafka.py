@@ -7,3 +7,6 @@ class Kafka:
     def produce(self, data):
         pass
 
+    def consume(self):
+        pass
+
