@@ -14,7 +14,8 @@ config['cassandra'] = {
 
 # Add config settings for Kafka
 config['kafka'] = {
-    'host': 'http://127.0.0.1'
+    'host': 'http://127.0.0.1',
+    'port': 3030
 }
 
 with open('./config.ini', 'w') as f:
