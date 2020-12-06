@@ -1,3 +1,4 @@
+kafka-python==2.0.2
 cassandra-driver==3.24.0
 pyspark==3.0.1
 python-crontab==2.5.1
