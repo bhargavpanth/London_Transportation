@@ -6,14 +6,17 @@ from typing import List
 import requests
 import json
 
-def get_transportation_modes() -> List[str]:
+def get_transportation_modes() -> List[str] or None:
     url = 'https://api.tfl.gov.uk/Line/Meta/Modes'
     res = requests.get(url)
     if res.status_code == 200:
         data = json.loads(res.content.decode('utf-8'))
-        return data
+        return fetch_modes_from_response(data)
     else:
         return None
 
-def fetch_modes_from_response(data):
-    pass
+def fetch_modes_from_response(data) -> List[str] or None:
+    modes = []
+    for mode in data:
+        modes.append(mode['modeName'])
+    return modes
