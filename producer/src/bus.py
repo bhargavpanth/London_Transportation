@@ -1,7 +1,3 @@
-'''
-disruption end-point
-https://api.tfl.gov.uk/Line/Mode/{modes}/Disruption
-'''
 from utils import get_transportation_modes
 
 class Bus:
