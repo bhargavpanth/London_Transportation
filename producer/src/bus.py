@@ -9,9 +9,7 @@ class Bus:
         self.end_point = 'https://api.tfl.gov.uk/Line/Route'
 
     def fetch_transportation_mode(self):
-        if get_transportation_modes().index('Bus'):
-            return 'Bus'
-        return 'Bus'
+        return get_transportation_modes()['bus']
 
     def fetch_all(self):
         pass

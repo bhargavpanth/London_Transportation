@@ -16,7 +16,7 @@ def get_transportation_modes() -> List[str] or None:
         return None
 
 def fetch_modes_from_response(data) -> List[str] or None:
-    modes = []
+    modes = {}
     for mode in data:
-        modes.append(mode['modeName'])
+        modes[mode['modeName']] = mode['modeName']
     return modes
