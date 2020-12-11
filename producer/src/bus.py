@@ -2,6 +2,7 @@ from utils import get_transportation_modes
 
 class Bus:
     def __init__(self):
+        # route id starts from 100
         self.end_point = 'https://api.tfl.gov.uk/Line/Route'
 
     def fetch_transportation_mode(self):
