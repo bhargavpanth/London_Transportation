@@ -1,4 +1,4 @@
-from utils import get_transportation_modes
+from utils import get_transportation_modes, disruption_for_mode, Mode
 
 class Bus:
     def __init__(self):
@@ -10,3 +10,6 @@ class Bus:
 
     def fetch_all(self):
         pass
+
+    def get_disruption(self):
+        model = disruption_for_mode(Mode.BUS)

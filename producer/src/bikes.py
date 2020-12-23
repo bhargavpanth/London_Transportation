@@ -13,5 +13,5 @@ class Bike:
         # where id is f'Bikepoints_{num}' and 1 <= num <= 821
         pass
 
-    def __get_disruption_mode(self):
+    def get_disruption(self):
         mode = disruption_for_mode(Mode.CYCLE)
