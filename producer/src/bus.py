@@ -1,4 +1,5 @@
 from utils import get_transportation_modes, disruption_for_mode, Mode
+from lib.kafka_producer_consumer import Producer, Consumer
 
 class Bus:
     def __init__(self):
